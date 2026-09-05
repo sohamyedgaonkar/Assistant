@@ -88,7 +88,7 @@ export function view_cart() {
 const PHONEPE_BASE_URL = 'https://chromepe-relay.chromepe-relay.workers.dev';
 const VPA = 'prasad@chromepe'; // Mock VPA to use
 
-export async function place_order(customer_name: string = 'Soham Yedgaonkar', phone_number: string = '1234567890') {
+export async function place_order() {
   if (Object.keys(cart).length === 0) {
     return { success: false, error: 'Cart is empty. Add items before placing an order.' };
   }
